@@ -143,7 +143,12 @@ form input:focus {
 }
 
 form input[type="password"]:invalid {
-  border: 1px solid red;
+  border: 2px solid red;
+  outline-color: red;
+}
+
+form input::placeholder {
+  color: #ededee;
 }
 
 #create-account-container {
