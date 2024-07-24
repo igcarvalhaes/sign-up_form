@@ -76,7 +76,14 @@
 
             <div class="inputs">
               <label for="phone_number">PHONE NUMBER</label>
-              <input type="number" id="phone_number" name="user_phone_number" />
+              <input
+                type="number"
+                id="phone_number"
+                name="user_phone_number"
+                placeholder="(xx) xxxxxxx-xxxx"
+                pattern="^\d{7}-\d{4}$
+              "
+              />
             </div>
 
             <div class="inputs margin-right">
