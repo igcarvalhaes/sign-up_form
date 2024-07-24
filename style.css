@@ -6,6 +6,10 @@
   font-style: normal;
 }
 
+.margin-right {
+  margin-right: 40px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,24 +18,30 @@
 
 body {
   max-height: 100vh;
+  font-family: "Inter", sans-serif;
 }
 
-#main {
+main {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 #left-container {
   background-image: url("img/halie-west-25xggax4bSA-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 30vw;
   height: 100vh;
-  padding-top: 200px;
+  width: 30%;
+  padding-top: 210px;
 }
 
 #right-container {
-  background-color: white;
+  height: 100vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(247, 246, 246);
 }
 
 #transparent-dark-container {
@@ -52,4 +62,92 @@ body {
   font-family: "norsebold", sans-serif;
   font-size: 6rem;
   color: white;
+}
+
+#image-credit,
+#image-credit a {
+  font-size: 0.8rem;
+  color: white;
+}
+
+#image-credit {
+  position: fixed;
+  bottom: 0;
+  width: 30%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#about-service {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  gap: 30px;
+}
+
+#about-service p {
+  margin-left: 50px;
+  max-width: 800px;
+  font-weight: 500;
+}
+
+#about-service p:last-child {
+  margin-bottom: -30px;
+}
+
+#form {
+  background-color: white;
+  padding-left: 50px;
+  flex-grow: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 20px -20px;
+  color: #2b3542;
+}
+
+#form h2 {
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  max-width: 800px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+form input {
+  width: 250px;
+  height: 30px;
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+}
+
+form input:focus {
+  outline-color: #7190e6;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 5px 6px;
+}
+
+form input[type="password"]:invalid {
+  border: 1px solid red;
+}
+
+#create-account-container {
+  margin-left: 50px;
+  flex-grow: 2;
 }
