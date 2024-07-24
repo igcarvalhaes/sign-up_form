@@ -149,4 +149,33 @@ form input[type="password"]:invalid {
 #create-account-container {
   margin-left: 50px;
   flex-grow: 2;
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: #596d48;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  width: 220px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #6f865a;
+}
+
+small {
+  display: block;
+  margin-top: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+small a {
+  text-decoration: none;
+  color: #596d48;
 }
